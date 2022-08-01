@@ -1,16 +1,15 @@
 html{
     font-size: 16px;
 }
-.box1{
-    /* width: 100%;
-    height: 75vh;
-    border: 0px solid black;
-    border-radius: 10px;
-    background-color: white;
-    box-sizing: border-box;
-    position: relative;
-    margin-left: 40px;
-    margin-right: 40px; */
+.times{
+     display: flex;
+     font-size: 1.4rem;
+     text-align: center;
+     position: relative;
+     background-color: #deecf0;
+     width: fit-content;
+     left: 40vw;
+     top: 2rem;
 }
 #menu{   
     display: flex;
@@ -340,7 +339,8 @@ html{
     background-color: black;
     color: white;
     position: relative;
-    right: 1rem;
+   
+
 }
 
 
@@ -463,8 +463,8 @@ html{
     bottom: 1.5rem;
 }
 .box3{
-    width: 100%;
-    height: 70vh;
+   width: 100vw;
+   height: fit-content;
     background-color: whitesmoke;
     border: 0px solid black;
     position: relative;
@@ -473,9 +473,11 @@ html{
 }
 .about1{
     color: orange;
-    font-size: 20px;
+    font-size: 1.25rem;
     text-align: center;
-    padding-top: 1rem;
+    position: relative;
+    margin-top: 5rem;
+    top: 0rem;
 }
 
 .foodmenu{
@@ -608,7 +610,7 @@ left: 0rem;
 }
 #space{
   position: relative;
-  left: -0rem;
+  left: 5vw;
   bottom: 2rem;
 }
 
@@ -654,12 +656,18 @@ left: 15vw;
     margin-top: 4rem;
 }
 #input{
+    width: 80%;
    position: relative;
-   left: 5.5rem;
+   left: 3.5rem;
+   height: 1.8rem;
+   bottom: 1rem;
 }
 #submit{
+    width: 80%;
+    padding: 3px;
    position: relative;
-   left: 3rem;
+   left: 5rem;
+   bottom: 1rem;
 }
 
 }

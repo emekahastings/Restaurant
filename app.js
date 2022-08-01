@@ -16,6 +16,7 @@ ham.addEventListener('click', function openslide(){
    let buttons= document.querySelectorAll('.hi')
    let collection= document.getElementById('collection')
    let dishlist= document.querySelectorAll('.first')
+   let resize= document.getElementById('resize')
 
   
    buttons.forEach(function(button){
@@ -25,6 +26,7 @@ ham.addEventListener('click', function openslide(){
                 dishlist.forEach(function(dish){
                    if(dish.classList.contains('brk')){
                        dish.style.display='block'
+                       resize.style.display='flex'
                    }else{
                        dish.style.display='none'
                    }}
@@ -34,6 +36,7 @@ ham.addEventListener('click', function openslide(){
                 dishlist.forEach(function(dish){
                    if(dish.classList.contains('first')){
                        dish.style.display='block'
+                       
                    }else{
                        dish.style.display='none'
                    }}
@@ -61,71 +64,22 @@ ham.addEventListener('click', function openslide(){
         })
       })
     
-     
+let hrs= document.querySelector('.hrs')     
+let mins= document.querySelector('.mins') 
+let secs= document.querySelector('.secs') 
+
+function getTime(){
+    let time= new Date
+    let hours= time.getHours()
+    console.log(hours)
+    let minutes= time.getMinutes()
+    let seconds= time.getSeconds()
+
+    hrs.innerHTML= hours +":"
+    mins.innerHTML= minutes + ":"
+    secs.innerHTML=seconds
+    
+}
+getTime()
     
    
-//    buttons.forEach(function(button){
-//        button.addEventListener('click', function(event){
-//            let filter= event.target.value
-//              if(filter==='all'){
-//                carlist.forEach(function(dish){
-//                    if(dish.classList.contains('')){
-//                        car.style.display='block'
-//                    }else{
-//                        car.style.display='none'
-//                    }
-//                })
-               
-//              } 
-//               if(filter==='breakfast'){
-//                  dishlist.forEach(function(dish){
-//                      if(dish.classList.contains('brk')){
-//                          dish.style.display='inline' 
-//                         console.log('yes')               
-//                         } else{ 
-//                            dish.style.display='none'
-//                            alert('no') 
-//                         }
-//                  })
-//              } else if(filter==='honda'){
-//                  carlist.forEach(function(car){
-//                      if(car.classList.contains('honda')){
-//                          car.style.display='inline'
-//                          car.style["-webkit-transform"]= "translate(0px, 0"
-//                      }else{
-//                          car.style.display='none'
-//                      }
-//                  })
-//              }else if(filter==='toyota'){
-//                carlist.forEach(function(car){
-//                    if(car.classList.contains('toyo')){
-//                        car.style.display='inline'
-//                    }else{
-//                        car.style.display='none'
-//                    }
-//                })
-//            } else if(filter==='honda'){
-//                carlist.forEach(function(car){
-//                    if(car.classList.contains('honda')){
-//                        car.style.display='inline'
-                      
-//                    }else{
-//                        car.style.display='none'
-//                    }
-//                })
-//            }   else if(filter==='benz'){
-//                carlist.forEach(function(car){
-//                    if(car.classList.contains('benz')){
-//                        car.style.display='inline'
-//                    }else{
-//                        car.style.display='none'
-//                    }
-//                })
-//            }   
-                 
-             
-//        })
-     
-      
-//    })
-      
