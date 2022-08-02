@@ -242,9 +242,11 @@ html{
 }
 .dates1{
  margin-left: 4rem;
+ font-family: 'Ibarra Real Nova', serif;
 }
 .dates2{
    margin-left: 10rem;
+   font-family: 'Ibarra Real Nova', serif;
 }
 .vid{
     width: 30%;
@@ -346,6 +348,7 @@ html{
 
 @media screen and (max-width:440px) {
     body{
+        width: 100vw;
         overflow-x: hidden;
       margin: auto;
       padding: 0px;
@@ -449,18 +452,19 @@ html{
 .header{
     font-size: 15px;
     position: relative;
-    right: 20px;
+    right: 2rem;
 }
 .maintext{
     
-    width: 100%;
+    width: 120%;
     position: relative;
-    right: 1.4rem;
+    right: 3rem;
 }
 .button{
     padding: 3px;
     position: relative;
     bottom: 1.5rem;
+    right: 0.5rem;
 }
 .box3{
    width: 100vw;
@@ -484,7 +488,7 @@ html{
     display: flex;
     font-size: large;
    position: relative;
-   right: 13rem;
+   right: 12rem;
 }
 
 .shake{
@@ -495,7 +499,7 @@ html{
     display: block;
 position: relative;
 margin-left: 0.2rem;
-left: 0rem;
+left: 0.5rem;
 }  
 
 #resize{
@@ -544,6 +548,18 @@ left: 0rem;
     top: 2.5rem;
  
 }
+#direction{
+   position: relative;
+   bottom: 6.5rem;
+}
+#next{
+   position: relative;
+   left: 7rem;
+}
+#previous{
+    position: relative;
+    right: 7rem;
+ }
 .customer{
     border: 0px, solid black;
     width: 35%;
@@ -611,7 +627,7 @@ left: 0rem;
 #space{
   position: relative;
   left: 5vw;
-  bottom: 2rem;
+ top: 1rem;
 }
 
 .smallcap{
@@ -622,6 +638,7 @@ left: 0rem;
 }
 
   .finaltext{
+    font-size: 1.4rem;
  position: relative;
  left: 23%;
   }
@@ -631,19 +648,22 @@ left: 0rem;
   }
   
   #imgl,#imgp{
-      width: 30px;
-      height: 30px;
+      width: 20px;
+      height: 20px;
   }
   #imgm{
-    width: 30px;
-      height: 30px;
+    width: 20px;
+      height: 20px;
   }
   .contact{
 position: relative;
 left: 15vw;
+font-family: 'Ibarra Real Nova', serif;
+
   }
   #mail,#phone{
-    margin-bottom: 1rem;
+    margin-top: 2rem;
+    font-size: 'Ibarra Real Nova', serif;
   }
  
  
@@ -663,11 +683,12 @@ left: 15vw;
    bottom: 1rem;
 }
 #submit{
-    width: 80%;
-    padding: 3px;
+    width: fit-content;
+    height: fit-content;
+    padding: 9px;
    position: relative;
-   left: 5rem;
-   bottom: 1rem;
+   left: 37vw;
+   bottom: 0.5rem;
 }
 
 }

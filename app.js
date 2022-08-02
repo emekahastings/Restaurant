@@ -64,22 +64,83 @@ ham.addEventListener('click', function openslide(){
         })
       })
     
-let hrs= document.querySelector('.hrs')     
-let mins= document.querySelector('.mins') 
-let secs= document.querySelector('.secs') 
+      details= [ {
+        id:1,
+        name: 'Sarah Jones',
 
-function getTime(){
-    let time= new Date
-    let hours= time.getHours()
-    console.log(hours)
-    let minutes= time.getMinutes()
-    let seconds= time.getSeconds()
+        image: 'adora.jpg' ,
+        desc: 'The food is amazing and i really enjoyed dinner with my date',
+    },
+    
+        {
+    
+        id: 2,
+        name: 'Susan Smith',
+        image: 'princess.jpg' ,
+        desc: ' The customer service was on point unlike most places you visit, i am surely coming back here again',
+    },
+       {
+        id: 3,
+        name: 'Andrew James',
+        image: 'marvin.jpg',
+        desc: 'The delivery was efficient even though it was slow, they came through nevertheless and apologized for the delay and i think thats professional'
+    
+    },
+    {
+        id: 4,
+        name: 'Great Smart',
+        image: 'prosper.jpg',
+        desc: ' I didnt like the food because they didnt have the vegan option but the booking was easy and the restaurant was classy '
+    
+    },
 
-    hrs.innerHTML= hours +":"
-    mins.innerHTML= minutes + ":"
-    secs.innerHTML=seconds
+    ]
+        
     
-}
-getTime()
+    let image= document.querySelector('.customer');
+    let called=document.querySelector('.name');
+    let desc= document.querySelector('.review')
     
+    let prev=document.getElementById("previous");
+    let next= document.getElementById("next");
+    
+    
+    let currentItem=0;
+    
+    next.addEventListener("click", function showPerson(){
+        let item= details[currentItem]
+        console.log(item)
+        image.src=details[currentItem].image;
+        called.innerHTML= details[currentItem].name;
+        Job.textContent= details[currentItem].Job;
+        desc.textContent= details[currentItem].desc
+        
+    })
+    // Now we need to make other imags show
+    
+    next.addEventListener("click", function showPerson(){
+        currentItem++
+        if (currentItem> details.length-1){
+            currentItem=0
+        }
+        
+    })
+    
+    prev.addEventListener("click", function showPerson (){
+        let item= details[currentItem]
+        console.log(item)
+        image.src=details[currentItem].image;
+        called.innerHTML= details[currentItem].name;
+        desc.textContent= details[currentItem].desc;
+        
+        
+    })
+    
+    prev.addEventListener("click", function showPerson(){
+        currentItem--
+        if (currentItem< 0){
+            currentItem= details.length-1
+        }
+        
+    })
    
