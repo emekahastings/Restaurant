@@ -68,7 +68,7 @@ ham.addEventListener('click', function openslide(){
         id:1,
         name: 'Sarah Jones',
 
-        image: 'adora.jpg' ,
+        image: 'amaka.jpg' ,
         desc: 'The food is amazing and i really enjoyed dinner with my date',
     },
     
@@ -82,7 +82,7 @@ ham.addEventListener('click', function openslide(){
        {
         id: 3,
         name: 'Andrew James',
-        image: 'marvin.jpg',
+        image: 'nader.jpg',
         desc: 'The delivery was efficient even though it was slow, they came through nevertheless and apologized for the delay and i think thats professional'
     
     },
@@ -112,8 +112,7 @@ ham.addEventListener('click', function openslide(){
         console.log(item)
         image.src=details[currentItem].image;
         called.innerHTML= details[currentItem].name;
-        Job.textContent= details[currentItem].Job;
-        desc.textContent= details[currentItem].desc
+        desc.textContent= details[currentItem].desc;
         
     })
     // Now we need to make other imags show

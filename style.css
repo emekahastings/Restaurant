@@ -71,7 +71,7 @@ html{
 .motto{
     margin-left: 1rem;
     z-index: 1;
-    position: absolute;
+    position: relative;
     bottom: 5rem;
     font-size: 1rem;
     color: red;
@@ -252,7 +252,7 @@ html{
     border-radius: 50% ;
 }
 .name{
-    font-size: 1.6rem;
+    font-size: 2rem;
 
 }
 .review{
@@ -261,20 +261,17 @@ html{
     margin-top: 0rem;
 
 }
-.c{
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: rgb(238, 172, 148);
-    margin-left: 20px;
-}
-.circle{
-    display: flex;
-    margin-left: 40rem;
-}
-#ci{
-    background-color: rgb(238, 73, 13);
-}
+
+
+#next{
+    position: relative;
+    left: 7rem;
+    z-index: 900;
+ }
+ #previous{
+     position: relative;
+     right: 7rem;
+  }
 
 .box6{
     width: 100%;
@@ -357,6 +354,14 @@ html{
     background-color: white;
     height: 5vh;
    }
+   .motto{
+    margin-left: 1rem;
+    z-index: 1;
+    position: relative;
+    bottom: 7rem;
+    font-size: 1rem;
+    color: red;
+}
    #menu{
     display:none;
 }
@@ -409,7 +414,7 @@ html{
 #mainbox1{
     position: relative;
     bottom: 0rem;
-    height: 32vh;
+    height: 37vh;
 }
 #search{
     width: 30%;
@@ -552,23 +557,22 @@ display: flex;
     bottom: 2rem;
     /* margin-bottom: 10rem; */
 }
-.book{
-    
-}
+
 .say{
     font-size: 1.3rem;
     position: relative;
     bottom: 1.5rem;
 }
 .name{
-    font-size: 1.2rem;
-    padding-top: 3rem;
+    font-size: 1.7rem;
+    padding-top: 1rem;
 
 }
 .review{
-    font-family: serif ;
-    font-size: 1rem;
-    margin-top: 0rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.1rem;
+   position: relative;
+   bottom: 1rem;
 
 }
 .both{
@@ -597,8 +601,8 @@ display: flex;
 }
 #spaces{
     position: relative;
-    left: 8vw;
-  bottom: 2rem;
+    left: 5vw;
+  bottom: 1rem;
 }
 
 .smallcap{
@@ -655,18 +659,33 @@ font-family: 'Ibarra Real Nova', serif;
     width: 50vw;
    position: relative;
    left: 20vw;
-   height: 1.8rem;
+   height: 1.3rem;
    margin-top:1em ;
-   bottom: 0.6rem;
+   bottom: 1.8rem;
 }
 #submit{
     width: fit-content;
     height: fit-content;
-    padding: 9px;
+    padding: 2px;
    position: relative;
-   left: 35vw;
-   bottom: 0.5rem;
+   left: 37vw;
+   bottom: 1.8rem;
 }
+
+}
+
+@media screen and (max-height:900px){
+    /* body{
+        background-color: red;
+    } */
+    .motto{
+        margin-left: 1rem;
+        z-index: 1;
+        position: absolute;
+        top: 10rem;
+        font-size: 1rem;
+        color: red;
+    }
 
 }
 
